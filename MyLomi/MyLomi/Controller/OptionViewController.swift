@@ -68,6 +68,7 @@ class OptionViewController: UIViewController {
         view.addSubview(discoverLabel)
         view.addSubview(throwLabel)
         view.addSubview(loginBtn)
+        loginBtn.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
         view.addSubview(signUpBtn)
     }
     
@@ -118,6 +119,12 @@ class OptionViewController: UIViewController {
         NSLayoutConstraint.activate(throwConstraints)
         NSLayoutConstraint.activate(loginContraints)
         NSLayoutConstraint.activate(signUpConstraints)
+    }
+    
+    @objc
+    func loginTapped(){
+        let loginVC = LoginViewController()
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
 
 }
