@@ -55,6 +55,7 @@ class GetStartedViewController: UIViewController {
         view.addSubview(nameLabel)
         view.addSubview(sloganLabel)
         view.addSubview(getStartedBtn)
+        getStartedBtn.addTarget(self, action: #selector(getStarted), for: .touchUpInside)
     }
     
     private func applyConstraints(){
@@ -98,7 +99,11 @@ class GetStartedViewController: UIViewController {
         NSLayoutConstraint.activate(getStartedConstraints)
     }
     
-    
+    @objc
+    func getStarted(){
+        let ovc = OptionViewController()
+        self.navigationController?.pushViewController(ovc, animated: true)
+    }
     
     
 }

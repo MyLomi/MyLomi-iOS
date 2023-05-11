@@ -16,6 +16,7 @@
 		9EA907452A03FB0900EA5905 /* MyLomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907442A03FB0900EA5905 /* MyLomiTests.swift */; };
 		9EA9074F2A03FB0900EA5905 /* MyLomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */; };
 		9EA907512A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */; };
+		9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9EA9074A2A03FB0900EA5905 /* MyLomiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLomiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITests.swift; sourceTree = "<group>"; };
 		9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,13 @@
 		9EA907292A03FB0800EA5905 /* MyLomi */ = {
 			isa = PBXGroup;
 			children = (
+				9EC7325A2A0CEDA400B0B6BA /* Utils */,
+				9EC732592A0CED9B00B0B6BA /* Networking */,
+				9EC732582A0CED9300B0B6BA /* Model */,
+				9EC732572A0CED8B00B0B6BA /* View */,
+				9EC732562A0CED7900B0B6BA /* Controller */,
 				9EA9072A2A03FB0800EA5905 /* AppDelegate.swift */,
 				9EA9072C2A03FB0800EA5905 /* SceneDelegate.swift */,
-				9EA9072E2A03FB0800EA5905 /* GetStartedViewController.swift */,
 				9EA907362A03FB0900EA5905 /* Assets.xcassets */,
 				9EA907382A03FB0900EA5905 /* LaunchScreen.storyboard */,
 				9EA9073B2A03FB0900EA5905 /* Info.plist */,
@@ -125,6 +131,43 @@
 				9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */,
 			);
 			path = MyLomiUITests;
+			sourceTree = "<group>";
+		};
+		9EC732562A0CED7900B0B6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EA9072E2A03FB0800EA5905 /* GetStartedViewController.swift */,
+				9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EC732572A0CED8B00B0B6BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EC732582A0CED9300B0B6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EC732592A0CED9B00B0B6BA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9EC7325A2A0CEDA400B0B6BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA9072F2A03FB0800EA5905 /* GetStartedViewController.swift in Sources */,
+				9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */,
 				9EA9072B2A03FB0800EA5905 /* AppDelegate.swift in Sources */,
 				9EA907352A03FB0800EA5905 /* MyLomi.xcdatamodeld in Sources */,
 				9EA9072D2A03FB0800EA5905 /* SceneDelegate.swift in Sources */,
