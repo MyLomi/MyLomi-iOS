@@ -63,6 +63,8 @@ class OptionViewController: UIViewController {
     }
     
     private func setUpViews(){
+        self.title = "Options"
+        self.navigationItem.setHidesBackButton(true, animated: true)
         view.backgroundColor = .systemBackground
         view.addSubview(logoImageView)
         view.addSubview(discoverLabel)
@@ -70,6 +72,7 @@ class OptionViewController: UIViewController {
         view.addSubview(loginBtn)
         loginBtn.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
         view.addSubview(signUpBtn)
+        signUpBtn.addTarget(self, action: #selector(signupTapped), for: .touchUpInside)
     }
     
     private func applyConstraints(){
@@ -127,4 +130,9 @@ class OptionViewController: UIViewController {
         self.navigationController?.pushViewController(loginVC, animated: true)
     }
 
+    @objc
+    func signupTapped(){
+        let signupVC = SignUpViewController()
+        self.navigationController?.pushViewController(signupVC, animated: true)
+    }
 }

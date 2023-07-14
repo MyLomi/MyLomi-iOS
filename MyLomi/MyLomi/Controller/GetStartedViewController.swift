@@ -51,6 +51,7 @@ class GetStartedViewController: UIViewController {
     
     private func setUpViews(){
         view.backgroundColor = .systemBackground
+        self.title = "Get Started"
         view.addSubview(logoImageView)
         view.addSubview(nameLabel)
         view.addSubview(sloganLabel)

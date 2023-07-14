@@ -71,6 +71,7 @@ class LoginViewController: UIViewController {
     }
     
     private func setUpViews(){
+        self.title = "Login"
         view.backgroundColor = .systemBackground
         view.addSubview(welcomeLabel)
         view.addSubview(emailTextField)
