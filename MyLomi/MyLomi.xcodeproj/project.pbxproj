@@ -18,6 +18,7 @@
 		9EA9074F2A03FB0900EA5905 /* MyLomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */; };
 		9EA907512A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */; };
 		9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */; };
+		FEF4C86A2A61625200CDDDA0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITests.swift; sourceTree = "<group>"; };
 		9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				9EA9072E2A03FB0800EA5905 /* GetStartedViewController.swift */,
 				9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */,
 				9E8B28CD2A0D03E80080E7B1 /* LoginViewController.swift */,
+				FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E8B28CE2A0D03E80080E7B1 /* LoginViewController.swift in Sources */,
+				FEF4C86A2A61625200CDDDA0 /* SignUpViewController.swift in Sources */,
 				9EA9072F2A03FB0800EA5905 /* GetStartedViewController.swift in Sources */,
 				9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */,
 				9EA9072B2A03FB0800EA5905 /* AppDelegate.swift in Sources */,
