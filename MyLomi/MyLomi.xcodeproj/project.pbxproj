@@ -14,10 +14,13 @@
 		9EA907352A03FB0800EA5905 /* MyLomi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907332A03FB0800EA5905 /* MyLomi.xcdatamodeld */; };
 		9EA907372A03FB0900EA5905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA907362A03FB0900EA5905 /* Assets.xcassets */; };
 		9EA9073A2A03FB0900EA5905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA907382A03FB0900EA5905 /* LaunchScreen.storyboard */; };
-		9EA907452A03FB0900EA5905 /* MyLomiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907442A03FB0900EA5905 /* MyLomiTests.swift */; };
-		9EA9074F2A03FB0900EA5905 /* MyLomiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */; };
-		9EA907512A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */; };
 		9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */; };
+		9ED5E0202A85450300F7FCC5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E01F2A85450300F7FCC5 /* MainTabBarController.swift */; };
+		9ED5E0242A8548E400F7FCC5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E0232A8548E400F7FCC5 /* DiscoverViewController.swift */; };
+		9ED5E0272A85490900F7FCC5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E0262A85490900F7FCC5 /* MessageViewController.swift */; };
+		9ED5E02A2A85492400F7FCC5 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E0292A85492400F7FCC5 /* MatchesViewController.swift */; };
+		9ED5E02D2A85493D00F7FCC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E02C2A85493D00F7FCC5 /* ProfileViewController.swift */; };
+		9ED5E0302A85495C00F7FCC5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E02F2A85495C00F7FCC5 /* SettingsViewController.swift */; };
 		FEF4C86A2A61625200CDDDA0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,11 +52,14 @@
 		9EA907392A03FB0900EA5905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA9073B2A03FB0900EA5905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EA907402A03FB0900EA5905 /* MyLomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLomiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EA907442A03FB0900EA5905 /* MyLomiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiTests.swift; sourceTree = "<group>"; };
 		9EA9074A2A03FB0900EA5905 /* MyLomiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLomiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITests.swift; sourceTree = "<group>"; };
-		9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		9ED5E01F2A85450300F7FCC5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		9ED5E0232A8548E400F7FCC5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		9ED5E0262A85490900F7FCC5 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		9ED5E0292A85492400F7FCC5 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		9ED5E02C2A85493D00F7FCC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9ED5E02F2A85495C00F7FCC5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				9EA907292A03FB0800EA5905 /* MyLomi */,
-				9EA907432A03FB0900EA5905 /* MyLomiTests */,
-				9EA9074D2A03FB0900EA5905 /* MyLomiUITests */,
 				9EA907282A03FB0800EA5905 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,7 +109,10 @@
 		9EA907292A03FB0800EA5905 /* MyLomi */ = {
 			isa = PBXGroup;
 			children = (
-				9EC732562A0CED7900B0B6BA /* Controller */,
+				9ED5E01D2A85445F00F7FCC5 /* Model */,
+				9ED5E01C2A85445400F7FCC5 /* View */,
+				9ED5E01E2A85446900F7FCC5 /* ViewModel */,
+				9ED5E01F2A85450300F7FCC5 /* MainTabBarController.swift */,
 				9EA9072A2A03FB0800EA5905 /* AppDelegate.swift */,
 				9EA9072C2A03FB0800EA5905 /* SceneDelegate.swift */,
 				9EA907362A03FB0900EA5905 /* Assets.xcassets */,
@@ -116,24 +123,42 @@
 			path = MyLomi;
 			sourceTree = "<group>";
 		};
-		9EA907432A03FB0900EA5905 /* MyLomiTests */ = {
-			isa = PBXGroup;
-			children = (
-				9EA907442A03FB0900EA5905 /* MyLomiTests.swift */,
-			);
-			path = MyLomiTests;
-			sourceTree = "<group>";
-		};
-		9EA9074D2A03FB0900EA5905 /* MyLomiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9EA9074E2A03FB0900EA5905 /* MyLomiUITests.swift */,
-				9EA907502A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift */,
-			);
-			path = MyLomiUITests;
-			sourceTree = "<group>";
-		};
 		9EC732562A0CED7900B0B6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E0212A8548B300F7FCC5 /* Auth */,
+				9ED5E02E2A85494600F7FCC5 /* Settings */,
+				9ED5E02B2A85492800F7FCC5 /* Profile */,
+				9ED5E0282A85491000F7FCC5 /* Matches */,
+				9ED5E0252A8548F700F7FCC5 /* Message */,
+				9ED5E0222A8548C700F7FCC5 /* Discover */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9ED5E01C2A85445400F7FCC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EC732562A0CED7900B0B6BA /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ED5E01D2A85445F00F7FCC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ED5E01E2A85446900F7FCC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9ED5E0212A8548B300F7FCC5 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				9EA9072E2A03FB0800EA5905 /* GetStartedViewController.swift */,
@@ -141,7 +166,47 @@
 				9E8B28CD2A0D03E80080E7B1 /* LoginViewController.swift */,
 				FEF4C8692A61625200CDDDA0 /* SignUpViewController.swift */,
 			);
-			path = Controller;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9ED5E0222A8548C700F7FCC5 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E0232A8548E400F7FCC5 /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		9ED5E0252A8548F700F7FCC5 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E0262A85490900F7FCC5 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		9ED5E0282A85491000F7FCC5 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E0292A85492400F7FCC5 /* MatchesViewController.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		9ED5E02B2A85492800F7FCC5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E02C2A85493D00F7FCC5 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9ED5E02E2A85494600F7FCC5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9ED5E02F2A85495C00F7FCC5 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,11 +339,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED5E0242A8548E400F7FCC5 /* DiscoverViewController.swift in Sources */,
 				9E8B28CE2A0D03E80080E7B1 /* LoginViewController.swift in Sources */,
 				FEF4C86A2A61625200CDDDA0 /* SignUpViewController.swift in Sources */,
+				9ED5E0202A85450300F7FCC5 /* MainTabBarController.swift in Sources */,
+				9ED5E0272A85490900F7FCC5 /* MessageViewController.swift in Sources */,
+				9ED5E02A2A85492400F7FCC5 /* MatchesViewController.swift in Sources */,
+				9ED5E02D2A85493D00F7FCC5 /* ProfileViewController.swift in Sources */,
 				9EA9072F2A03FB0800EA5905 /* GetStartedViewController.swift in Sources */,
 				9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */,
 				9EA9072B2A03FB0800EA5905 /* AppDelegate.swift in Sources */,
+				9ED5E0302A85495C00F7FCC5 /* SettingsViewController.swift in Sources */,
 				9EA907352A03FB0800EA5905 /* MyLomi.xcdatamodeld in Sources */,
 				9EA9072D2A03FB0800EA5905 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA907452A03FB0900EA5905 /* MyLomiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EA9074F2A03FB0900EA5905 /* MyLomiUITests.swift in Sources */,
-				9EA907512A03FB0900EA5905 /* MyLomiUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
