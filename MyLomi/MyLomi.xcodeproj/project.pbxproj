@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E52A6062A94E92E000F8BAB /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E52A6052A94E92E000F8BAB /* MessageTableViewCell.swift */; };
 		9E8B28CE2A0D03E80080E7B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B28CD2A0D03E80080E7B1 /* LoginViewController.swift */; };
 		9EA9072B2A03FB0800EA5905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9072A2A03FB0800EA5905 /* AppDelegate.swift */; };
 		9EA9072D2A03FB0800EA5905 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA9072C2A03FB0800EA5905 /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E52A6052A94E92E000F8BAB /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		9E8B28CD2A0D03E80080E7B1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9EA907272A03FB0800EA5905 /* MyLomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA9072A2A03FB0800EA5905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E52A6042A94E90C000F8BAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9E52A6052A94E92E000F8BAB /* MessageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9EA9071E2A03FB0800EA5905 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		9ED5E01C2A85445400F7FCC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E52A6042A94E90C000F8BAB /* Cell */,
 				9EC732562A0CED7900B0B6BA /* Controller */,
 			);
 			path = View;
@@ -346,6 +357,7 @@
 				9ED5E0272A85490900F7FCC5 /* MessageViewController.swift in Sources */,
 				9ED5E02A2A85492400F7FCC5 /* MatchesViewController.swift in Sources */,
 				9ED5E02D2A85493D00F7FCC5 /* ProfileViewController.swift in Sources */,
+				9E52A6062A94E92E000F8BAB /* MessageTableViewCell.swift in Sources */,
 				9EA9072F2A03FB0800EA5905 /* GetStartedViewController.swift in Sources */,
 				9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */,
 				9EA9072B2A03FB0800EA5905 /* AppDelegate.swift in Sources */,
