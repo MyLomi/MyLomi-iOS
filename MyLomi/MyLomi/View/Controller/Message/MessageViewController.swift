@@ -25,7 +25,7 @@ class MessageViewController: UIViewController {
     
     private func setUpViews(){
         view.backgroundColor = .systemBackground
-        searchBar.placeholder = "Search"
+        searchBar.placeholder = "Search..."
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.titleView = searchBar
         navigationItem.title = "Messages"
