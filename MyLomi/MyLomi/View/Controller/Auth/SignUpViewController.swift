@@ -155,14 +155,14 @@ class SignUpViewController: UIViewController {
         loginLabel.translatesAutoresizingMaskIntoConstraints = false
         
         let welcomeConstraints = [
-            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             welcomeLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 35),
             welcomeLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -35),
             welcomeLabel.heightAnchor.constraint(equalToConstant: 104)
         ]
         
         let firstNameConstraints = [
-            firstNameTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 71),
+            firstNameTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 31),
             firstNameTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 35),
             firstNameTextField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -35),
             firstNameTextField.heightAnchor.constraint(equalToConstant: 60)

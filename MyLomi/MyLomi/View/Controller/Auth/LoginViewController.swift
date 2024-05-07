@@ -77,6 +77,7 @@ class LoginViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(forgotPasswordLabel)
+        loginBtn.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
         view.addSubview(loginBtn)
     }
     
@@ -88,14 +89,14 @@ class LoginViewController: UIViewController {
         loginBtn.translatesAutoresizingMaskIntoConstraints = false
         
         let welcomeConstraints = [
-            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
+            welcomeLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             welcomeLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             welcomeLabel.widthAnchor.constraint(equalToConstant: 342),
             welcomeLabel.heightAnchor.constraint(equalToConstant: 104)
         ]
         
         let emailConstraints = [
-            emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 260),
+            emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 110),
             emailTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             emailTextField.widthAnchor.constraint(equalToConstant: 342),
             emailTextField.heightAnchor.constraint(equalToConstant: 61)
@@ -116,7 +117,7 @@ class LoginViewController: UIViewController {
         ]
         
         let loginBtnConstraints = [
-            loginBtn.topAnchor.constraint(equalTo: forgotPasswordLabel.bottomAnchor, constant: 113),
+            loginBtn.topAnchor.constraint(equalTo: forgotPasswordLabel.bottomAnchor, constant: 28),
             loginBtn.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             loginBtn.widthAnchor.constraint(equalToConstant: 342),
             loginBtn.heightAnchor.constraint(equalToConstant: 61)
@@ -129,5 +130,15 @@ class LoginViewController: UIViewController {
         NSLayoutConstraint.activate(forgotConstraints)
         NSLayoutConstraint.activate(loginBtnConstraints)
         
+    }
+    
+    private func goExplore(){
+        let mainTabBarC = MainTabBarController()
+        mainTabBarC.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(mainTabBarC, animated: true)
+    }
+    
+    @objc func didTapLogin(){
+        self.goExplore()
     }
 }
