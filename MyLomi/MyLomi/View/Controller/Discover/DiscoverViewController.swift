@@ -13,7 +13,7 @@ class DiscoverViewController: UIViewController {
     private let potentialImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Potential")
-        imageView.layer.cornerRadius = 15
+        imageView.layer.cornerRadius = 2
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
@@ -91,23 +91,23 @@ class DiscoverViewController: UIViewController {
         likeBtn.translatesAutoresizingMaskIntoConstraints = false
         
         let imageConstraints = [
-            potentialImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24),
+            potentialImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             potentialImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 36),
             potentialImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -36),
-            potentialImageView.heightAnchor.constraint(equalToConstant: 541)
+            potentialImageView.heightAnchor.constraint(equalToConstant: 491)
         ]
         
         let nameAgeContraints = [
             nameAgeLabel.leadingAnchor.constraint(equalTo: potentialImageView.leadingAnchor, constant: 20),
             nameAgeLabel.widthAnchor.constraint(equalToConstant: 300),
-            nameAgeLabel.topAnchor.constraint(equalTo: potentialImageView.topAnchor, constant: 470),
+            nameAgeLabel.topAnchor.constraint(equalTo: potentialImageView.topAnchor, constant: 432),
             nameAgeLabel.heightAnchor.constraint(equalToConstant: 26)
         ]
         
         let bioConstraints = [
             bioLabel.leadingAnchor.constraint(equalTo: potentialImageView.leadingAnchor, constant: 20),
             bioLabel.widthAnchor.constraint(equalToConstant: 300),
-            bioLabel.topAnchor.constraint(equalTo: nameAgeLabel.bottomAnchor, constant: 12),
+            bioLabel.topAnchor.constraint(equalTo: nameAgeLabel.bottomAnchor, constant: 7),
             bioLabel.heightAnchor.constraint(equalToConstant: 17)
         ]
         

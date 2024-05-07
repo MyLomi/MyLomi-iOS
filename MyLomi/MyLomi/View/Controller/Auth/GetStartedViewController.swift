@@ -66,7 +66,7 @@ class GetStartedViewController: UIViewController {
         getStartedBtn.translatesAutoresizingMaskIntoConstraints = false
         
         let logoConstraints = [
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 163.1),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 70),
             logoImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 192.4)/2),
             logoImageView.widthAnchor.constraint(equalToConstant: 192.4),
             logoImageView.heightAnchor.constraint(equalToConstant: 156.91)
@@ -87,7 +87,7 @@ class GetStartedViewController: UIViewController {
         ]
         
         let getStartedConstraints = [
-            getStartedBtn.topAnchor.constraint(equalTo: sloganLabel.bottomAnchor, constant: 248),
+            getStartedBtn.topAnchor.constraint(equalTo: sloganLabel.bottomAnchor, constant: 124),
             getStartedBtn.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             getStartedBtn.widthAnchor.constraint(equalToConstant: 342),
             getStartedBtn.heightAnchor.constraint(equalToConstant: 61)

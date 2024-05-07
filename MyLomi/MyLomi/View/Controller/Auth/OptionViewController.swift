@@ -83,7 +83,7 @@ class OptionViewController: UIViewController {
         signUpBtn.translatesAutoresizingMaskIntoConstraints = false
         
         let logoConstraints = [
-            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 115.3),
+            logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 21),
             logoImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 218.44)/2),
             logoImageView.widthAnchor.constraint(equalToConstant: 218.44),
             logoImageView.heightAnchor.constraint(equalToConstant: 177.66)
@@ -104,7 +104,7 @@ class OptionViewController: UIViewController {
         ]
         
         let loginContraints = [
-            loginBtn.topAnchor.constraint(equalTo: throwLabel.bottomAnchor, constant: 150),
+            loginBtn.topAnchor.constraint(equalTo: throwLabel.bottomAnchor, constant: 70),
             loginBtn.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             loginBtn.widthAnchor.constraint(equalToConstant: 342),
             loginBtn.heightAnchor.constraint(equalToConstant: 61)
