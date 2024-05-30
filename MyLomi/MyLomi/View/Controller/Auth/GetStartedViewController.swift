@@ -33,8 +33,8 @@ class GetStartedViewController: UIViewController {
         return label
     }()
     
-    private let getStartedBtn: UIButton = {
-        let button = UIButton()
+    private let getStartedBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.backgroundColor = UIColor(named: "AccentColor")
         button.setTitle("Get Started", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -102,6 +102,7 @@ class GetStartedViewController: UIViewController {
     
     @objc
     func getStarted(){
+        getStartedBtn.shakeButton()
         let ovc = OptionViewController()
         self.navigationController?.pushViewController(ovc, animated: true)
     }
