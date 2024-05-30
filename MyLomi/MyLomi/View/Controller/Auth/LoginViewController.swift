@@ -54,8 +54,8 @@ class LoginViewController: UIViewController {
         return label
     }()
     
-    private let loginBtn: UIButton = {
-        let button = UIButton()
+    private let loginBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.backgroundColor = UIColor(named: "AccentColor")
         button.setTitle("Log in", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -139,6 +139,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc func didTapLogin(){
+        loginBtn.shakeButton()
         self.goExplore()
     }
 }

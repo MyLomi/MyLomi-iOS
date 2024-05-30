@@ -36,8 +36,8 @@ class OptionViewController: UIViewController {
        return label
     }()
     
-    private let loginBtn: UIButton = {
-        let button = UIButton()
+    private let loginBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.backgroundColor = UIColor(named: "AccentColor")
         button.setTitle("Log in", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -46,8 +46,8 @@ class OptionViewController: UIViewController {
         return button
     }()
     
-    private let signUpBtn: UIButton = {
-        let button = UIButton()
+    private let signUpBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.backgroundColor = UIColor(named: "AccentColor")
         button.setTitle("Sign up", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -126,12 +126,14 @@ class OptionViewController: UIViewController {
     
     @objc
     func loginTapped(){
+        loginBtn.shakeButton()
         let loginVC = LoginViewController()
         self.navigationController?.pushViewController(loginVC, animated: true)
     }
 
     @objc
     func signupTapped(){
+        signUpBtn.shakeButton()
         let signupVC = SignUpViewController()
         self.navigationController?.pushViewController(signupVC, animated: true)
     }

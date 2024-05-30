@@ -15,6 +15,7 @@
 		9EA907352A03FB0800EA5905 /* MyLomi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EA907332A03FB0800EA5905 /* MyLomi.xcdatamodeld */; };
 		9EA907372A03FB0900EA5905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA907362A03FB0900EA5905 /* Assets.xcassets */; };
 		9EA9073A2A03FB0900EA5905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA907382A03FB0900EA5905 /* LaunchScreen.storyboard */; };
+		9EC3D3C42C08B51100F9B341 /* MyLomiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC3D3C32C08B51100F9B341 /* MyLomiButton.swift */; };
 		9EC7325C2A0CEE5500B0B6BA /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */; };
 		9ED5E0202A85450300F7FCC5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E01F2A85450300F7FCC5 /* MainTabBarController.swift */; };
 		9ED5E0242A8548E400F7FCC5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5E0232A8548E400F7FCC5 /* DiscoverViewController.swift */; };
@@ -56,6 +57,7 @@
 		9EA9073B2A03FB0900EA5905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EA907402A03FB0900EA5905 /* MyLomiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLomiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA9074A2A03FB0900EA5905 /* MyLomiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLomiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EC3D3C32C08B51100F9B341 /* MyLomiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLomiButton.swift; sourceTree = "<group>"; };
 		9EC7325B2A0CEE5500B0B6BA /* OptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		9ED5E01F2A85450300F7FCC5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		9ED5E0232A8548E400F7FCC5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = MyLomi;
 			sourceTree = "<group>";
 		};
+		9EC3D3C22C08B4DC00F9B341 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				9EC3D3C32C08B51100F9B341 /* MyLomiButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		9EC732562A0CED7900B0B6BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		9ED5E01C2A85445400F7FCC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9EC3D3C22C08B4DC00F9B341 /* Custom */,
 				9E52A6042A94E90C000F8BAB /* Cell */,
 				9EC732562A0CED7900B0B6BA /* Controller */,
 			);
@@ -353,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EC3D3C42C08B51100F9B341 /* MyLomiButton.swift in Sources */,
 				9ED5E0242A8548E400F7FCC5 /* DiscoverViewController.swift in Sources */,
 				9E8B28CE2A0D03E80080E7B1 /* LoginViewController.swift in Sources */,
 				FEF4C86A2A61625200CDDDA0 /* SignUpViewController.swift in Sources */,
@@ -535,7 +547,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UGUGD93N65;
+				DEVELOPMENT_TEAM = M2XJ7QWM67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyLomi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyLomi;
@@ -566,7 +578,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UGUGD93N65;
+				DEVELOPMENT_TEAM = M2XJ7QWM67;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyLomi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyLomi;

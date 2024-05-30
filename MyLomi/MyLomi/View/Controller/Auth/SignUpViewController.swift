@@ -97,8 +97,8 @@ class SignUpViewController: UIViewController {
         return label
     }()
     
-    private let signUpBtn: UIButton = {
-        let button = UIButton()
+    private let signUpBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.backgroundColor = UIColor(named: "AccentColor")
         button.setTitle("Sign up", for: .normal)
         button.setTitleColor(.white, for: .normal)

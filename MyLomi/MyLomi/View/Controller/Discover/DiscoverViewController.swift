@@ -35,23 +35,23 @@ class DiscoverViewController: UIViewController {
         return label
     }()
     
-    private let nopeBtn: UIButton = {
-        let button = UIButton()
+    private let nopeBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.setBackgroundImage(UIImage(systemName: "x.circle.fill"), for: .normal)
         button.tintColor = .red
         button.layer.cornerRadius = 22
         return button
     }()
     
-    private let shootBtn: UIButton = {
-        let button = UIButton()
+    private let shootBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.setBackgroundImage(UIImage(named: "LomiShoot"), for: .normal)
         button.layer.cornerRadius = 20
         return button
     }()
     
-    private let likeBtn: UIButton = {
-        let button = UIButton()
+    private let likeBtn: MyLomiButton = {
+        let button = MyLomiButton()
         button.setBackgroundImage(UIImage(systemName: "heart.fill"), for: .normal)
         button.tintColor = .red
         button.layer.cornerRadius = 22
@@ -77,8 +77,11 @@ class DiscoverViewController: UIViewController {
         view.addSubview(potentialImageView)
         view.addSubview(nameAgeLabel)
         view.addSubview(bioLabel)
+        nopeBtn.addTarget(self, action: #selector(didTapNope), for: .touchUpInside)
         view.addSubview(nopeBtn)
+        shootBtn.addTarget(self, action: #selector(didTapShoot), for: .touchUpInside)
         view.addSubview(shootBtn)
+        likeBtn.addTarget(self, action: #selector(didTapLike), for: .touchUpInside)
         view.addSubview(likeBtn)
     }
     
@@ -142,7 +145,16 @@ class DiscoverViewController: UIViewController {
         NSLayoutConstraint.activate(likeConstraints)
     }
     
+    @objc func didTapShoot(){
+        shootBtn.shakeButton()
+    }
     
+    @objc func didTapNope(){
+        nopeBtn.shakeButton()
+    }
     
+    @objc func didTapLike(){
+        likeBtn.shakeButton()
+    }
     
 }
