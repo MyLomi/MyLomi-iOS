@@ -7,8 +7,9 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
+    
     private let welcomeLabel: UILabel = {
         let label = UILabel()
         let text = "Welcome to \nMyLomi"
@@ -21,62 +22,65 @@ class SignUpViewController: UIViewController {
         return label
     }()
     
-    private let firstNameTextField: UITextField = {
-        let textField = UITextField()
+    private let firstNameTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "First Name"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "person")
+        textField.leftPadding = 21
         return textField
     }()
     
-    private let phoneNumberTextField: UITextField = {
-        let textField = UITextField()
+    private let phoneNumberTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "Phone Number"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
         textField.keyboardType = .phonePad
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "phone")
+        textField.leftPadding = 21
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
-        let textField = UITextField()
+    private let passwordTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "Password"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
         textField.isSecureTextEntry = true
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "lock")
+        textField.leftPadding = 21
         return textField
     }()
     
-    private let genderTextField: UITextField = {
-        let textField = UITextField()
+    private let genderTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "Gender"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
-        textField.keyboardType = .phonePad
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "person.crop.circle.badge.questionmark")
+        textField.leftPadding = 21
         return textField
     }()
     
-    private let birthdayTextField: UITextField = {
-        let textField = UITextField()
+    private let birthdayTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "Birthday"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
-        textField.keyboardType = .phonePad
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "calendar")
+        textField.leftPadding = 21
         return textField
     }()
     
@@ -128,6 +132,8 @@ class SignUpViewController: UIViewController {
     private func setUpViews(){
         self.title = "Signup"
         view.backgroundColor = .systemBackground
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         view.addSubview(welcomeLabel)
         view.addSubview(firstNameTextField)
         view.addSubview(phoneNumberTextField)
@@ -240,6 +246,11 @@ class SignUpViewController: UIViewController {
     private func loginLabelTapped(){
         let loginVC = LoginViewController()
         navigationController?.pushViewController(loginVC, animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
 }

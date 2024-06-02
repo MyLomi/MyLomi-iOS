@@ -21,27 +21,29 @@ class LoginViewController: UIViewController {
         return label
     }()
     
-    private let emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "Email Address"
+    private let phoneNumberField: MyLomiTextField = {
+        let textField = MyLomiTextField()
+        textField.placeholder = "Phone Number"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
-        textField.keyboardType = .emailAddress
+        textField.keyboardType = .phonePad
         textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
+        textField.leftImage = UIImage(systemName: "phone")
+        textField.leftPadding = 21
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
-        let textField = UITextField()
+    private let passwordTextField: MyLomiTextField = {
+        let textField = MyLomiTextField()
         textField.placeholder = "Password"
         textField.layer.cornerRadius = 30
         textField.layer.borderColor = UIColor(named: "BorderColor")?.cgColor
         textField.layer.borderWidth = 1
-        textField.leftViewMode = .always
-        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 30))
         textField.isSecureTextEntry = true
+        textField.leftViewMode = .always
+        textField.leftImage = UIImage(systemName: "lock")
+        textField.leftPadding = 21
         return textField
     }()
     
@@ -73,8 +75,10 @@ class LoginViewController: UIViewController {
     private func setUpViews(){
         self.title = "Login"
         view.backgroundColor = .systemBackground
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
         view.addSubview(welcomeLabel)
-        view.addSubview(emailTextField)
+        view.addSubview(phoneNumberField)
         view.addSubview(passwordTextField)
         view.addSubview(forgotPasswordLabel)
         loginBtn.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
@@ -83,7 +87,7 @@ class LoginViewController: UIViewController {
     
     private func applyConstraints(){
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
-        emailTextField.translatesAutoresizingMaskIntoConstraints = false
+        phoneNumberField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         loginBtn.translatesAutoresizingMaskIntoConstraints = false
@@ -96,14 +100,14 @@ class LoginViewController: UIViewController {
         ]
         
         let emailConstraints = [
-            emailTextField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 110),
-            emailTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
-            emailTextField.widthAnchor.constraint(equalToConstant: 342),
-            emailTextField.heightAnchor.constraint(equalToConstant: 61)
+            phoneNumberField.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 110),
+            phoneNumberField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
+            phoneNumberField.widthAnchor.constraint(equalToConstant: 342),
+            phoneNumberField.heightAnchor.constraint(equalToConstant: 61)
         ]
         
         let passwordConstraints = [
-            passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor, constant: 24),
+            passwordTextField.topAnchor.constraint(equalTo: phoneNumberField.bottomAnchor, constant: 24),
             passwordTextField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: (view.bounds.width - 342)/2),
             passwordTextField.widthAnchor.constraint(equalToConstant: 342),
             passwordTextField.heightAnchor.constraint(equalToConstant: 61)
@@ -141,5 +145,10 @@ class LoginViewController: UIViewController {
     @objc func didTapLogin(){
         loginBtn.shakeButton()
         self.goExplore()
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
