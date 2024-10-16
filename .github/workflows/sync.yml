@@ -1,0 +1,36 @@
+
+
+
+name: Sync with Upstream Repo
+
+# Runs on a schedule - you can set this to run daily/weekly/etc.
+on:
+  schedule:
+    - cron: '0 0 * * *'  # This runs every day at midnight (UTC). Modify it as needed.
+  workflow_dispatch:  # Allows you to manually trigger it
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repo Org
+        uses: actions/checkout@v2
+        with:
+          # Fetch all branches
+          fetch-depth: 0
+
+      - name: Set Up Upstream Repo
+        run: |
+          git remote add upstream https://github.com/yohannescodes/MyLomi.git
+          git fetch upstream
+          
+      - name: Merge Changes from Repo Personal
+        run: |
+          git checkout main  # Switch to main branch
+          git merge upstream/main  # Merge upstream's main branch into Repo B
+
+      - name: Push Changes to Repo B
+        run: |
+          git push origin main  # Push merged changes to Repo Org
+
