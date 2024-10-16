@@ -18,8 +18,23 @@ Please refer to the [Adobe XD Design Document](https://xd.adobe.com/view/795aa0a
 2. **Clone** your fork locally:
 git clone https://github.com/yohannescodes/MyLomi.git
 3. **Create a branch** for your feature:
-git checkout -b feature-name
-4. Install dependencies and ensure the project builds successfully in Xcode.
+    ```
+    git checkout -b feature-name
+4. **Make your changes**: Implement the feature or fix the bug.
+5. **Commit your changes**: Commit your changes with a clear and concise message:
+   ```
+   git commit -m "Add a new feature or fix a bug"
+6. **Push your changes**: Push your changes to your fork:
+   ```
+   git push origin feature/your-feature-name
+7. **Open a Pull Request**: Go to the original repository and click on "Pull Requests." Click the "New Pull Request" button and select your branch.
+
+### Style Guidelines
+Please adhere to the following coding style guidelines:
+
+- Follow Swift's API Design Guidelines.
+- Write clear, concise commit messages.
+- Keep your code clean and well-organized.
 
 ### Contributing Code
 - Follow Swift's best practices and ensure your code adheres to the project's style.
