@@ -29,7 +29,7 @@ The project is in the early development phase, and we’re looking for contribut
 - Ensure pull requests are well-documented and tested.
 
 ## License
-[MIT License](LICENSE)
+[Apache 2.0 License](LICENSE)
 
 ## Contact
 Feel free to reach out at yohannesakhaile@gmail.com for questions or collaboration.
