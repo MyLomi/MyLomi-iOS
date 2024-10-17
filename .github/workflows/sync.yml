@@ -1,7 +1,5 @@
 
-
-
-name: Sync with Upstream Repo
+- name: Sync with Upstream Repo
 
 # Runs on a schedule - you can set this to run daily/weekly/etc.
 on:
@@ -14,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Set up Git committer identity
+        run: |
+          git config --global user.name "Yohannes Haile"
+          git config --global user.email "yohannesakhaile@gmail.com"
+
       - name: Checkout Repo Org
         uses: actions/checkout@v2
         with:
