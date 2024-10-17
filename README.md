@@ -26,13 +26,13 @@ The project is in the early development phase, and we’re looking for contribut
 
 ## How to Contribute
 1. **Fork** the repository.
-2. **Clone** the repo: `git clone https://github.com/yohannescodes/MyLomi.git`
+2. **Clone** the repo: `git clone https://github.com/MyLomi/MyLomi-iOS.git`
 3. **Install dependencies**: Instructions coming soon.
 4. Submit Pull Requests for features, bug fixes, or improvements.
 
 ## Contribution Guidelines
 - Follow Swift coding standards and best practices.
-- Check for [open issues](https://github.com/yohannescodes/MyLomi/issues) before starting work.
+- Check for [open issues](https://github.com/MyLomi/MyLomi-iOS/issues) before starting work.
 - Ensure pull requests are well-documented and tested.
 
 ## License
