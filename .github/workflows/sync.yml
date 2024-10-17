@@ -1,11 +1,10 @@
+name: Sync with Upstream Repo
 
-- name: Sync with Upstream Repo
-
-# Runs on a schedule - you can set this to run daily/weekly/etc.
+# Runs on a schedule - daily at 6:00 AM UTC
 on:
   schedule:
-    - cron: '0 6 * * *'  # This runs every day at midnight (UTC). Modify it as needed.
-  workflow_dispatch:  # Allows you to manually trigger it
+    - cron: '0 6 * * *'  # This runs every day at 6:00 AM (UTC).
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   sync:
@@ -18,9 +17,9 @@ jobs:
           git config --global user.email "yohannesakhaile@gmail.com"
 
       - name: Checkout Repo Org
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          # Fetch all branches
+          # Fetch all branches to make sure we have everything
           fetch-depth: 0
 
       - name: Set Up Upstream Repo
@@ -36,4 +35,3 @@ jobs:
       - name: Push Changes to Repo B
         run: |
           git push origin dev  # Push merged changes to Repo Org
-
