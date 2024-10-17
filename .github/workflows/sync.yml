@@ -6,7 +6,7 @@ name: Sync with Upstream Repo
 # Runs on a schedule - you can set this to run daily/weekly/etc.
 on:
   schedule:
-    - cron: '0 0 * * *'  # This runs every day at midnight (UTC). Modify it as needed.
+    - cron: '0 6 * * *'  # This runs every day at midnight (UTC). Modify it as needed.
   workflow_dispatch:  # Allows you to manually trigger it
 
 jobs:
@@ -27,10 +27,10 @@ jobs:
           
       - name: Merge Changes from Repo Personal
         run: |
-          git checkout main  # Switch to main branch
-          git merge upstream/main  # Merge upstream's main branch into Repo B
+          git checkout dev  # Switch to dev branch
+          git merge upstream/dev  # Merge upstream's dev branch into Repo B
 
       - name: Push Changes to Repo B
         run: |
-          git push origin main  # Push merged changes to Repo Org
+          git push origin dev  # Push merged changes to Repo Org
 
