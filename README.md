@@ -11,9 +11,9 @@ MyLomi - LOVE IS A LEMON AWAY (@mylomiapp) is a dating app with a traditional lo
 
 ## Features
 - Profile creation and management
-- Messaging and calling within the app
 - Personalized recommendations
-- Connect with virtual companions
+- Match with likes
+- Messaging matches
 
 ## Tech Stack
 - **Language**: Swift
