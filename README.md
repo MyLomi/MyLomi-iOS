@@ -1,6 +1,13 @@
 # MyLomi
 
-MyLomi is a unique dating app designed to help users connect with virtual companions. It aims to address gaps in romantic life by providing personalized interactions and support. Originally conceptualized in 2021, the project is now open-source, with a focus on iOS development using **Swift**.
+MyLomi - LOVE IS A LEMON AWAY (@mylomiapp) is a dating app with a traditional look and feel focusing on preserving Ethiopian Dating Culture digitally by enabling its user find the one as if it is Timket already. Originally conceptualized in 2021, the project is now open-source, with a focus on iOS development using **Swift**.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69292413-c844-4a5b-9998-bc4ea75f2bc6" width="30%">
+  <img src="https://github.com/user-attachments/assets/e2d7ba69-34ce-4465-8857-02b0a33797fb" width="30%">
+  <img src="https://github.com/user-attachments/assets/85bb055c-05bf-407e-bf92-ce6212575e50" width="30%">
+</p>
+
 
 ## Features
 - Profile creation and management
