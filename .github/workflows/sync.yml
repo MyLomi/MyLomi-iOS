@@ -1,15 +1,14 @@
 name: Sync with Upstream Repo
 
-# Runs on a schedule - daily at 6:00 AM UTC
 on:
   schedule:
-    - cron: '0 6 * * *'  # This runs every day at 6:00 AM (UTC).
+    - cron: '0 6 * * *'
   workflow_dispatch:  # Allows manual trigger
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Set up Git committer identity
         run: |
@@ -19,19 +18,20 @@ jobs:
       - name: Checkout Repo Org
         uses: actions/checkout@v3
         with:
-          # Fetch all branches to make sure we have everything
           fetch-depth: 0
 
       - name: Set Up Upstream Repo
         run: |
           git remote add upstream https://github.com/yohannescodes/MyLomi.git
           git fetch upstream
-          
+
       - name: Merge Changes from Repo Personal
         run: |
-          git checkout dev  # Switch to dev branch
-          git merge upstream/dev  # Merge upstream's dev branch into Repo B
+          git checkout dev
+          git merge upstream/dev
 
       - name: Push Changes to Repo B
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}  # Use the secret token
         run: |
-          git push origin dev  # Push merged changes to Repo Org
+          git push https://$GH_PAT@github.com/MyLomi/MyLomi-iOS.git dev  # Push merged changes with PAT authentication
